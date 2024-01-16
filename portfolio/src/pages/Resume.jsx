@@ -3,9 +3,12 @@ import React from 'react';
 function Resume() {
   return (
     <div>
-      <a className="resumedownload" href="/example.pdf" download="MyExampleFile.pdf">
-        My Resume
+        <div>My Resume</div>
+        <a className="resumedownload" href="../assets/ExampleResume.pdf" download="ExampleResume.pdf">
+        Download my resume
       </a>
+      <div>My Skills</div>
+      <p></p>
     </div>
   );
 }
