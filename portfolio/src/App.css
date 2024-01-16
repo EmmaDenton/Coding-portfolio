@@ -647,3 +647,25 @@ display: inline-flex;
   font-weight: bold;
   margin: 10px;
 }
+
+#resumecontainer {
+  margin: 25vh;
+}
+
+#resume-title {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.resumedownload {
+  position: fixed;
+  font-family: 'JetBrains Mono', monospace;
+  color: #76766D;
+  font-size: 15px;
+}
+
+.resumedownload:hover {
+  position: fixed;
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  font-size: 15px;
+}
