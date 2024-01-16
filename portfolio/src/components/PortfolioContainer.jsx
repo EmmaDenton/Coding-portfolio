@@ -1,32 +1,32 @@
 import { useState } from 'react';
 import NavTabs from './NavTabs';
-import Home from './pages/Home';
-import About from './pages/About';
-import Contact from './pages/Contact';
+import Header from './Header';
+import Footer from './footer';
+import About from '../pages/About';
+import Contact from '../pages/Contact';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
     if (currentPage === 'About') {
       return <About />;
     }
-    if (currentPage === 'Blog') {
-      return <Blog />;
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
+      {currentPage !== 'About' && <Header currentPage={currentPage} />}
+      {currentPage !== 'About' && <Footer />}
       <main className="mx-3">{renderPage()}</main>
     </div>
   );

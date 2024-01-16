@@ -1,10 +1,15 @@
-export default function Home() {
+export default function About() {
   return (
     <section>
       <section id="title"> 
         <div id="FirstName">Emma</div>
         <div id="LastName">Denton</div>
       </section>
+
+      <section id="aboutme-container">
+  <div id="aboutme-title">About Me</div>
+  <p id="aboutme-text">Example</p>
+</section>
 
       <section>
         <div id="blob1"></div>
