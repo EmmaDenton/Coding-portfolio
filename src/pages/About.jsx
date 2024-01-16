@@ -11,7 +11,7 @@ export default function About() {
         <div id="aboutme-title">About Me</div>
         <p id="aboutme-text">As a junior full-stack developer, I excel in JavaScript, Python, React, and Node.js. Passionate about learning, I thrive in both front-end and back-end development. I bring innovative solutions to collaborative teams and am committed to continually enhancing my skills to contribute significantly to the tech industry.</p>
       </div>
-  <img id="myphoto" src="./assets/devimg.jpg" alt="Photo of me" />
+  <img id="myphoto" src="../../public/assets/devimg.jpg" alt="Photo of me" />
 </section>
 
       <section>
