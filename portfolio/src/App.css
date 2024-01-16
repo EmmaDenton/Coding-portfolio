@@ -672,7 +672,7 @@ display: inline-flex;
 }
 
 .resumedownload:hover {
-  position: fixed;
+  position: relative;
   font-family: 'JetBrains Mono', monospace;
   color: white;
   font-size: 15px;
@@ -690,7 +690,7 @@ display: inline-flex;
   width: 300px;
   z-index: 3;
   position: relative;
-  right: -500px;
+  right: 100px;
 }
 
 .project-links {
@@ -706,6 +706,22 @@ display: inline-flex;
   font-size: 15px;
   margin-right: 5px;
   cursor: pointer;
+}
+
+.skillslist{
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  width: 70vw;
+}
+
+.skillslist li{
+  font-family: 'JetBrains Mono', monospace;
+  color: #76766D;
+  font-size: 15px;
+  margin-right: 20px;
+  list-style: none;
 }
 
 
