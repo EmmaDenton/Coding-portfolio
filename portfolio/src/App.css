@@ -23,10 +23,9 @@ body {
   margin-top: 35vh;
 }
 
-#aboutme-container {
+#aboutme-content {
   display: block;
   margin-left: 25vh;
-  margin-top: 40vh;
 }
 
 #aboutme-title {
@@ -668,4 +667,18 @@ display: inline-flex;
   font-family: 'JetBrains Mono', monospace;
   color: white;
   font-size: 15px;
+}
+
+#aboutme-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40vh;
+}
+
+#myphoto {
+  border-radius: 50%;
+  width: 300px;
+  z-index: 3;
+  position: relative;
+  right: -500px;
 }

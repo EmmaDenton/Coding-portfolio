@@ -7,8 +7,11 @@ export default function About() {
       </section>
 
       <section id="aboutme-container">
-  <div id="aboutme-title">About Me</div>
-  <p id="aboutme-text">Example</p>
+      <div id="aboutme-content">
+        <div id="aboutme-title">About Me</div>
+        <p id="aboutme-text">Example</p>
+      </div>
+  <img id="myphoto" src="./src/assets/devimg.jpg" alt="Description" />
 </section>
 
       <section>

@@ -11,7 +11,7 @@ function Contact() {
   const handleInputBlur = () => {
     if (!inputValue) { 
       setIsValid(false); 
-      alert('Please enter a valid name'); 
+      alert('Please enter a valid input'); 
     }
   };
 
