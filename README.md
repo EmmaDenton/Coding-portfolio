@@ -5,6 +5,8 @@ This project is my portfolio. Built with React.
 
 As a junior full-stack developer, I excel in JavaScript, Python, React, and Node.js. Passionate about learning, I thrive in both front-end and back-end development. I bring innovative solutions to collaborative teams and am committed to continually enhancing my skills to contribute significantly to the tech industry.
 
+<img width="1207" alt="Screenshot 2024-01-16 at 10 24 22 pm" src="https://github.com/EmmaDenton/Coding-portfolio/assets/141465015/96aff482-02c9-4b89-b42a-8c29e1cedc02">
+
 ## User Story
 AS AN employer looking for candidates with experience building single-page applications
 I WANT to view a potential employee's deployed React portfolio of work samples
