@@ -11,8 +11,8 @@ export default function Projects() {
               <div id="hero-text-container">
                 <div id="hero-card-subtitle">HTML/CSS/Javascript</div>
                 <div id="hero-card-p">Placeholder text</div>
-                <a>GitHub Repository</a>
-                <a>Deployed App</a>
+                <a className="project-links">GitHub Repository</a>
+                <a className="project-links">Deployed App</a>
               </div>
           </div>
         </div>
@@ -23,8 +23,8 @@ export default function Projects() {
                 <img className="project-image" src="./src/assets/Placeholder1.png" alt="Description" />
                 <div className="card-subtitle">HTML/CSS/Javascript</div>
                 <div className="card-p">Placeholder text</div>
-                <a>GitHub Repository</a>
-                <a>Deployed App</a>
+                <a className="project-links">GitHub Repository</a>
+                <a className="project-links">Deployed App</a>
               </div>
             </div>
           <div className="card" id="card-2">
@@ -33,8 +33,8 @@ export default function Projects() {
               <img className="project-image" src="./src/assets/Placeholder2.png" alt="Description" />
               <div className="card-subtitle">HTML/CSS/Javascript</div>
               <div className="card-p">Placeholder text</div>
-              <a>GitHub Repository</a>
-                <a>Deployed App</a>
+              <a className="project-links">GitHub Repository</a>
+                <a className="project-links">Deployed App</a>
             </div>
           </div>
           <div className="card" id="card-3">
@@ -43,8 +43,8 @@ export default function Projects() {
               <img className="project-image" src="./src/assets/Placeholder3.png" alt="Description" />
               <div className="card-subtitle">HTML/CSS/Javascript</div>
               <div className="card-p">Placeholder text</div>
-              <a>GitHub Repository</a>
-              <a>Deployed App</a>
+              <a className="project-links">GitHub Repository</a>
+              <a className="project-links">Deployed App</a>
             </div>
           </div>
           <div className="card" id="card-4">
@@ -53,8 +53,8 @@ export default function Projects() {
               <img className="project-image" src="./src/assets/Placeholder4.png" alt="Description" />
               <div className="card-subtitle">HTML/CSS/Javascript</div>
               <div className="card-p">Placeholder text</div>
-              <a>GitHub Repository</a>
-                <a>Deployed App</a>
+              <a className="project-links">GitHub Repository</a>
+              <a className="project-links">Deployed App</a>
             </div>
           </div>
         </div>

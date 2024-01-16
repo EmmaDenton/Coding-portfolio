@@ -11,17 +11,19 @@ export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   const renderPage = () => {
-    if (currentPage === 'About') {
-      return <About />;
-    }
-    if (currentPage === 'Projects') {
-      return <Projects />;
-    }
-    if (currentPage === 'Contact') {
-      return <Contact />;
-    }
-    if (currentPage === 'Resume') {
-      return <Resume />;
+    switch (currentPage) {
+      case 'About':
+        return <About />;
+      case 'Projects':
+        return <Projects />;
+      case 'Contact':
+        return <Contact />;
+      case 'Resume':
+        return <Resume />;
+      case 'Home':
+        return <About />;
+      default:
+        return <div>Page not found</div>;
     }
   };
 
@@ -30,9 +32,9 @@ export default function PortfolioContainer() {
   return (
     <div>
       <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
-      {currentPage !== 'About' && <Header currentPage={currentPage} />}
-      {currentPage !== 'About' && <Footer />}
+      {currentPage !== 'About' && currentPage !== 'Home' && <Header currentPage={currentPage} />}
       <main className="mx-3">{renderPage()}</main>
+      {currentPage !== 'About' && currentPage !== 'Home' && <Footer />}
     </div>
   );
 }

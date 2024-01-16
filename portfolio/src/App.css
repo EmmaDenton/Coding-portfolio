@@ -42,6 +42,7 @@ body {
   font-size: 20px;
   font-family: 'JetBrains Mono', monospace;
   z-index: 3;
+  width: 70%;
 }
   
 #project-container {
@@ -49,7 +50,6 @@ body {
   position: relative;
   margin-left: 25vh;
   margin-right: 25vh;
-  margin-top: 40vh;
   margin-bottom: 10vh;
 }
 
@@ -235,7 +235,7 @@ display: inline-flex;
 #contactme-container {
   display: block;
   position: relative;
-  margin: 25vh;
+  margin-left: 25vh;
 }
 
 #contactme-title {
@@ -250,16 +250,21 @@ display: inline-flex;
 #contactme-nav {
   color: #76766D;
   font-size: 20px;
-  font-family: 'JetBrains Mono', monospace;
-  list-style: none;
   padding: 50px;
   z-index: 3;
   width: 100vw;
   display: flex;
-  position: fixed;
+  position: relative;
   bottom: 0px;
   justify-content: space-around;
   align-items: center;
+}
+
+.contact-link {
+  color: #76766D;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 .contact-link:hover {
@@ -599,22 +604,21 @@ display: inline-flex;
 }
 
 #FirstNameHeader {
-  position: fixed;
+  position: relative;
   font-family: 'Ms Madi', cursive;
   font-size: 75px;
   color: white;
   left: 100px;
-  top: 50px;
   z-index: 3;
 }
 
 #LastNameHeader {
-  position: fixed;
+  position: relative;
   font-family: 'JetBrains Mono', monospace;
   font-size: 70px;
   color: white;
   left: 290px;
-  top: 46px;
+  top: -100px;
   z-index: 3;
 }
 
@@ -623,43 +627,48 @@ display: inline-flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction:column;
-  margin-left: 5px;
 }
 
 .input {
   padding: 5px 140px 5px 10px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
-  margin: 10px;
+  margin-top: 20px;
 }
 
 .messageInput {
   padding: 5px 140px 40px 10px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
-  margin: 10px;
+  margin-top: 20px;
 }
 
 #messagesubmitbtn {
   padding: 5px 140px 5px 10px;
   font-family: 'JetBrains Mono', monospace;
   font-weight: bold;
-  margin: 10px;
+  margin-top: 20px;
 }
 
 #resumecontainer {
-  margin: 25vh;
+  margin-left: 25vh;
+  height: 45vh;
 }
 
 #resume-title {
+  position: relative;
+  color: white;
+  font-size: 50px;
   font-family: 'JetBrains Mono', monospace;
+  z-index: 3;
 }
 
 .resumedownload {
-  position: fixed;
+  position: relative;
   font-family: 'JetBrains Mono', monospace;
   color: #76766D;
   font-size: 15px;
+  margin-top: 15px;
 }
 
 .resumedownload:hover {
@@ -667,6 +676,7 @@ display: inline-flex;
   font-family: 'JetBrains Mono', monospace;
   color: white;
   font-size: 15px;
+  margin-top: 15px;
 }
 
 #aboutme-container {
@@ -682,3 +692,20 @@ display: inline-flex;
   position: relative;
   right: -500px;
 }
+
+.project-links {
+  font-family: 'JetBrains Mono', monospace;
+  color: #76766D;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.project-links:hover {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  font-size: 15px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+

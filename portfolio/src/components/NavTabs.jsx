@@ -1,17 +1,15 @@
-import React, { useState } from 'react';
-
-
+import { useState } from 'react';
 function NavTabs({ currentPage, handlePageChange }) {
   const [isNavigatorOpen, setIsNavigatorOpen] = useState(false);
-  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
 
-  const toggleNavigator = () => {
+  const toggleNavigator = (event) => {
     event.stopPropagation();
     setIsNavigatorOpen(!isNavigatorOpen);
   };
 
-  const toggleDropdown = () => {
-    setIsDropdownVisible(!isDropdownVisible);
+  const handleLinkClick = (page, event) => {
+    event.preventDefault();
+    handlePageChange(page);
   };
 
   return (
@@ -23,14 +21,30 @@ function NavTabs({ currentPage, handlePageChange }) {
       </div>
       <nav className={`navigator ${isNavigatorOpen ? 'open' : 'closed'}`}>
         <ul>
-        <li><a href="#About" onClick={() => handlePageChange('About')}
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About</a></li>
-        <li><a href="#Projects" onClick={() => handlePageChange('Projects')}
-          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Project</a></li>
-        <li><a href="#Resume" onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a></li>
-          <li><a href="#Contact" onClick={() => handlePageChange('Contact')}
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a></li>
+          <li>
+            <a href="#" onClick={(e) => handleLinkClick('About', e)}
+              className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>
+              About
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={(e) => handleLinkClick('Projects', e)}
+              className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>
+              Projects
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={(e) => handleLinkClick('Resume', e)}
+              className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>
+              Resume
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={(e) => handleLinkClick('Contact', e)}
+              className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>
+              Contact
+            </a>
+          </li>
         </ul>
       </nav>
     </div>
